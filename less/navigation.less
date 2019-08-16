@@ -1,1 +1,46 @@
 // Navigation code here
+
+header {
+    .custom-layout(center);
+    .fixedNav;
+    background-color: @wild-sand;
+ 
+    menu {
+        .custom-layout(center);
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 800px;
+    
+            @media @phone {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .logo {
+            .custom-layout(center);
+            flex-wrap: wrap;
+            font-size: 4rem;
+        }    
+
+        nav {
+            .custom-layout(space-evenly);
+            margin-top: 20px;
+            width: 60%;
+
+                @media @phone {
+                    width: 90%;
+                }
+            
+        
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-family: @river-bend;
+                color: @ebony-clay;
+            }
+
+        }
+    }   
+}   
